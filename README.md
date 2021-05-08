@@ -15,18 +15,18 @@ operating systems and architectures.
 _Assuming one is in the root of this project_
 
 ```
-    mkdir build
-    cd build
-    cmake ..
-    make -j8
+mkdir build
+cd build
+cmake ..
+make -j8
 ```
 
 # Run Instructions
 _Assuming one is in the root of this project_
 
 ```
-    cd build
-    ./main
+cd build
+./main
 ```
 
 # IMPORTANT NOTE
@@ -36,10 +36,10 @@ in this project (however, they are commented out in main.cpp starting from
 line 191).
 
 ```c++
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 ```
 
 I commented these lines out because they were causing rendering issues in my system
